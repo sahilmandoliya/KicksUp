@@ -1,0 +1,58 @@
+const shoesData=[
+    {
+        id:"1",
+        name:"KSL 01",
+        imgName: "shoe.jpg",
+        brand: "KICKSUP",
+        type: "Loafers",
+        price: 2000,
+        rating: 3.5,
+    },
+    {
+        id: "2",
+        name: "KSW 01",
+        imgName: "shoe2.png",
+        brand: "KICKSUP",
+        type: "Loafers",
+        price: 2500,
+        rating: 2.5,
+    },
+    {
+        id: "3",
+        name: "Royal S 01",
+        imgName: "shoe.jpg",
+        brand: "KICKSUP",
+        type: "Sneakers",
+        price: 6000,
+        rating: 4.5,
+    },
+    {
+        id:"4",
+        name:"KSL 01",
+        imgName: "shoe2.png",
+        brand: "KICKSUP",
+        type: "Loafers",
+        price: 2000,
+        rating: 3.5,
+    },
+    {
+        id: "5",
+        name: "KSW 01",
+        imgName: "shoe.jpg",
+        brand: "KICKSUP",
+        type: "Loafers",
+        price: 2500,
+        rating: 2.5,
+    },
+    {
+        id: "6",
+        name: "Royal S 01",
+        imgName: "shoe2.png",
+        brand: "KICKSUP",
+        type: "Sneakers",
+        price: 6000,
+        rating: 4.5,
+    },
+]
+
+export default shoesData;

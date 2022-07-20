@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.underlay1 {
+    height: 54vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.underlay1::before {
+    content: '';
+    position: absolute;
+    inset: 42% 0 0 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgb(0, 0, 0));
+    opacity: 0.45;
+    filter: blur(15px);
+    z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.underlay2 {
+    height: max-content;
+    padding: 10px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 320px;
+    filter: invert(100%);
+    position: relative; 
+    z-index: 10;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.underlay2::before {
+    content: '';
+    position: absolute;
+    inset: -10% 0.3% 0 0.3%;
+    background-color: white;
+    opacity: 0.88;
+    filter: blur(10px);
+    z-index: -1;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-radio {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-radio.active::before {
+    inset: 0;
+    content: "\f00c";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert(100%);
+    background: rgb(245, 245, 245, 0.5);
+    border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.item-card {
+    margin-left: 1rem;
+    position: relative;
+}
+
+.item-card .item-card-xmark {
+    position: absolute; 
+    top: -0.3rem;
+    left: -0.4rem;
+    color: red;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 50%;
+    width: fit-content;
+    background-color: #ededed;
 }
