@@ -25,7 +25,7 @@ const DisplaySection = ({ shoes, setShoeToShow, setShowDesignSpace }) => {
         <Row style={{ minHeight: "71vh" }}>
           {shoes.length === 0 ? (
             <p className="text-center" style={{ marginTop: "24vh" }}>
-              Nothing to show! ;(
+              Nothing to show! ;
             </p>
           ) : (
             shoes.map((shoe, i) => (

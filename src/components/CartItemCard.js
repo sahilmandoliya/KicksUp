@@ -1,10 +1,11 @@
+import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 
 const CartItemCard = ({ cartItem, removeFromCartHandler }) => {
   return (
     <Row className="item-card mt-3">
       <i
-        className="fa-regular fa-circle-xmark item-card-xmark"
+        className="fa-solid fa-circle-xmark"
         onClick={() => removeFromCartHandler(cartItem.itemId, cartItem.size)}
       ></i>
 

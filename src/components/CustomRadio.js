@@ -36,7 +36,7 @@ const CustomRadio =({
             {options.map((option, index) => {
                 const styles = {};
                 if (!showValue) {
-                    styles.backgroundImage = `url(${process.env.PUBLIC_URL}/images/variants/${option}.png)`;
+                    styles.backgroundImage = `url(${process.env.PUBLIC_URL}/assets/images/variants/${option}.png)`;
                 } else {
                 styles.border = "1px solid rgb(0, 0, 0, 0.85)";
                 styles.display = "flex";

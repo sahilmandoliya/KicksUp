@@ -94,7 +94,7 @@ const DesignSection = ({
             <h4 className="fw-normal mb-0">{shoeToShow.name}</h4>
             <p className="fw-light mb-2">by {shoeToShow.brand}</p>
 
-            <ReactStarsRating value={shoeToShow.rating} size={20} />;
+            <ReactStarsRating value={shoeToShow.rating} size={20} />
             <p style={{ fontSize: "0.7rem" }}>80 reviews</p>
 
             <small>Rs. {shoeToShow.price}/-</small>
@@ -173,7 +173,7 @@ const DesignSection = ({
         <Row>
           <div className="d-flex gap-3 mt-2 mb-3">
             <span>Rate product</span>
-            <ReactStarsRating value={0} size={20}/>;
+            <ReactStarsRating value={0} size={20}/>
           </div>
 
           <div className="d-flex justify-content-center gap-3">

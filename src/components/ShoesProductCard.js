@@ -22,7 +22,7 @@ const ShoesProductCard =({name, price, imgName, rating, onClick}) =>{
                         <Card.Text className="small">Rs. {price}/-</Card.Text>
                     </Col>
                     <Col>
-                    <ReactStarsRating value={rating} size={15}/>;
+                    <ReactStarsRating value={rating} size={15}/>
                     </Col>
                 </Row>
             </Card.Body>
